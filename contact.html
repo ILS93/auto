@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автозапчасти</title>
+    <style>
+        body {
+    background-color: #A8D0E6;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #374785;
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="C:\Users\user\Desktop\indiv\favicon.jpg" width="200" height="150">
+        <h1>Форма для связи с нами</h1>
+    </header>
+    <form id="form">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Телефон:</label>
+        <input type="text" id="phone" name="phone" required>
+        <label for="excursion">Выберите тип авто:</label>
+        <select id="excursion" name="excursion">
+          <option value="1">Седан</option>
+          <option value="2">Лимузин</option>
+          <option value="3">Пикап</option>
+          <option value="4">Хетчбек</option>
+          <option value="5">Универсал</option>
+          <option value="6">другое</option>
+        </select>
+        <button type="submit">Сохранить</button>
+    
+    <script>
+        document.querySelector('form').addEventListener('submit', function (event) {
+    event.preventDefault();
+    alert('Данные записаны');
+});
+    </script>
+    <footer>
+        <nav>
+            <ul>
+                <table style="background-color: #F76C6C; border:#374785 0px">
+                  <tr><td><li><a href="index.html">Главная</a></li></td></tr>
+                  <tr><td><li><a href="about.html">Автор</a></li></td></tr>
+                  <tr><td><li><a href="contact.html">Контакты</a></li></td></tr> 
+                </table>
+            </ul>
+        </nav>
+        
+    </footer>
+</body>
+
+</html>
